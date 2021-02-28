@@ -1,0 +1,75 @@
+.clients {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  text-align: center;
+}
+
+.clients-title {
+  margin-bottom: 50px;
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.167;
+  color: var(--secondary-color);
+}
+
+.clients-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.clients-list-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
+  color: #afb1b8;
+  border: 1px solid #afb1b8;
+  border-radius: 4px;
+  transition: border-color var(--transition-duration) var(--cubic);
+
+  &:hover,
+  &:focus {
+    border-color: var(--accent-color);
+  }
+}
+
+.clients-list-logo {
+  fill: currentColor;
+  transition: fill var(--transition-duration) var(--cubic);
+
+  .clients-list-item:nth-child(1) & {
+    width: 44px;
+    height: 49px;
+  }
+
+  .clients-list-item:nth-child(2) & {
+    width: 40px;
+    height: 52px;
+  }
+
+  .clients-list-item:nth-child(3) & {
+    width: 41px;
+    height: 43px;
+  }
+
+  .clients-list-item:nth-child(4) & {
+    width: 80px;
+    height: 42px;
+  }
+
+  .clients-list-item:nth-child(5) & {
+    width: 59px;
+    height: 47px;
+  }
+
+  .clients-list-item:nth-child(6) & {
+    width: 88px;
+    height: 45px;
+  }
+
+  .clients-list-link:hover &,
+  .clients-list-link:focus & {
+    fill: var(--accent-color);
+  }
+}

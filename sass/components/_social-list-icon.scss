@@ -1,0 +1,11 @@
+.social-list-icon {
+  width: 20px;
+  height: 20px;
+  fill: #afb1b8;
+  transition: fill var(--transition-duration) var(--cubic);
+
+  .social-list-link:hover &,
+  .social-list-link:focus & {
+    fill: var(--main-white-color);
+  }
+}

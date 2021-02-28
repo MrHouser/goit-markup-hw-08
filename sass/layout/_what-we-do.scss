@@ -1,0 +1,47 @@
+.about-us.what-we-do {
+  padding-top: 47px;
+  padding-bottom: 94px;
+}
+
+.work-title {
+  margin-bottom: 50px;
+
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.167;
+  text-align: center;
+  color: var(--secondary-color);
+}
+
+.work-list {
+  margin: -15px;
+}
+
+.work-list-item {
+  margin: 15px;
+}
+
+.work-img-thumb {
+  position: relative;
+}
+
+.work-img-text {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 70px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  text-align: center;
+
+  text-transform: uppercase;
+
+  color: var(--main-white-color);
+  background-color: rgba(47, 48, 58, 0.8);
+}

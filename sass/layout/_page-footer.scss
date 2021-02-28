@@ -1,0 +1,138 @@
+.footer {
+  padding-top: 60px;
+  padding-bottom: 60px;
+
+  background-color: var(--dark-background-color);
+}
+
+.container.basement {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-left-side {
+  width: 231px;
+  margin-right: 70px;
+}
+
+.logo.footer-logo {
+  display: inline-block;
+  margin-right: 0;
+  margin-bottom: 20px;
+
+  color: var(--main-white-color);
+}
+
+.footer-list-item {
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+
+.adress {
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.714;
+  color: var(--main-white-color);
+  transition: color var(--transition-duration) var(--cubic);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+.footer-link {
+  font-style: normal;
+  font-weight: 400;
+  line-height: 1.715;
+  color: var(--secondary-white-color);
+  transition: color var(--transition-duration) var(--cubic);
+
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
+}
+
+/* center */
+
+.footer-center {
+  margin-right: 90px;
+}
+
+.footer-text {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.143;
+  text-transform: uppercase;
+
+  color: var(--main-white-color);
+}
+
+.footer-center-list-item {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.footer-center-link {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: var(--main-white-color);
+}
+
+.footer-center-icon {
+  fill: currentColor;
+}
+
+/* right side */
+
+.footer-form {
+  display: flex;
+  align-items: center;
+}
+
+.footer-input {
+  width: 358px;
+  height: 50px;
+  padding: 15px 16px;
+  margin-right: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  background: transparent;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.25;
+  color: rgba(255, 255, 255, 0.6);
+
+  &::placeholder {
+    color: rgba(255, 255, 255, 0.6);
+  }
+}
+
+.footer-button {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 200px;
+  height: 50px;
+  padding: 10px 28px 10px 29px;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  text-align: center;
+  letter-spacing: 0.06em;
+  color: var(--main-white-color);
+  background-color: var(--accent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.footer-button-icon {
+  width: 24px;
+  height: 24px;
+}
