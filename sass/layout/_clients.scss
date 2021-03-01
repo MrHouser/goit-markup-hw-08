@@ -1,27 +1,32 @@
 .clients {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   text-align: center;
 }
 
 .clients-title {
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-weight: 700;
-  font-size: 36px;
-  line-height: 1.167;
+  font-size: 28px;
+  line-height: 1.179;
   color: var(--secondary-color);
 }
 
 .clients-list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
+}
+
+.clients-list-item {
+  margin-bottom: 30px;
 }
 
 .clients-list-link {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 170px;
+  width: 210px;
   height: 90px;
   color: #afb1b8;
   border: 1px solid #afb1b8;
@@ -31,12 +36,13 @@
   &:hover,
   &:focus {
     border-color: var(--accent-color);
+    color: var(--accent-color);
   }
 }
 
 .clients-list-logo {
   fill: currentColor;
-  transition: fill var(--transition-duration) var(--cubic);
+  transition: color var(--transition-duration) var(--cubic);
 
   .clients-list-item:nth-child(1) & {
     width: 44px;
@@ -67,9 +73,63 @@
     width: 88px;
     height: 45px;
   }
+}
 
-  .clients-list-link:hover &,
-  .clients-list-link:focus & {
-    fill: var(--accent-color);
+@media screen and (min-width: 460px) and (max-width: 1199px) {
+  .clients-list-item {
+    &:nth-last-child(-n + 3) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 460px) and (max-width: 767px) {
+  .clients-list-item {
+    &:nth-last-child(-n + 2) {
+      margin-bottom: 0;
+    }
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .clients-list-link {
+    width: 226px;
+  }
+}
+
+@media screen and (max-width: 459px) {
+  .clients-list {
+    display: block;
+  }
+
+  .clients-list-item {
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+
+  .clients-list-link {
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
+  .clients-title {
+    margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.667;
+  }
+
+  .clients-list-item {
+    margin-bottom: 0;
+  }
+
+  .clients-list-link {
+    width: 170px;
   }
 }
