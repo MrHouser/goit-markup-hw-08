@@ -286,9 +286,6 @@ nav {
   .mobile-nav-list-item:not(:last-child) {
     margin-bottom: 25px;
   }
-  .mobile-nav-list-item:last-child {
-    margin-bottom: 200px;
-  }
   .mobile-nav-link {
     font-size: 24px;
     line-height: 1.175;
