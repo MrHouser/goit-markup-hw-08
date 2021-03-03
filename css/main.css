@@ -199,6 +199,9 @@ nav {
     fill: var(--accent-color);
   }
   .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     position: fixed;
     width: 100%;
     max-width: 100vw;

@@ -49,6 +49,9 @@
   }
 
   .mobile-menu {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     position: fixed;
     width: 100%;
     max-width: 100vw;
@@ -66,10 +69,6 @@
   .mobile-menu.is-open {
     transform: translateX(0);
   }
-
-  // .mobile-nav-list {
-  //   margin-bottom: 38%;
-  // }
 
   .mobile-close-button {
     position: absolute;
