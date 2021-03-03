@@ -93,6 +93,11 @@
       ),
       url('../images/hero/hero-desktop-bg.jpg');
   }
+
+  .main-title {
+    font-size: 44px;
+    line-height: 1.364;
+  }
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px),

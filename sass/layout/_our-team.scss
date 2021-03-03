@@ -81,8 +81,15 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
+
   .team-title {
     margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.167;
   }
 
   .team-list {
@@ -103,6 +110,7 @@
     padding-bottom: 30px;
   }
 }
+
 // .team {
 //   padding-top: 94px;
 //   padding-bottom: 94px;

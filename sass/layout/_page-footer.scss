@@ -144,6 +144,10 @@
 }
 
 @media screen and (min-width: 1200px) {
+  .footer {
+    text-align: left;
+  }
+
   .footer-left-side {
     width: 231px;
     margin-right: 70px;
@@ -166,7 +170,6 @@
 
   .footer-right-side {
     margin-left: 0;
-    text-align: left;
   }
 
   .footer-form {

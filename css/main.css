@@ -199,7 +199,7 @@ nav {
     fill: var(--accent-color);
   }
   .mobile-menu {
-    position: absolute;
+    position: fixed;
     width: 100%;
     max-width: 100vw;
     height: 100vh;
@@ -222,9 +222,6 @@ nav {
   .mobile-nav-list-item:not(:last-child) {
     margin-bottom: 32px;
   }
-  .mobile-nav-list-item:last-child {
-    margin-bottom: 302px;
-  }
   .mobile-nav-link {
     font-weight: 500;
     font-size: 40px;
@@ -235,6 +232,9 @@ nav {
   }
   .current {
     color: var(--accent-color);
+  }
+  .mobile-menu-bottom {
+    margin-top: auto;
   }
   .mobile-address-list-item:first-child {
     margin-bottom: 32px;
@@ -493,6 +493,10 @@ nav {
     padding-bottom: 200px;
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url("../images/hero/hero-desktop-bg.jpg");
   }
+  .main-title {
+    font-size: 44px;
+    line-height: 1.364;
+  }
 }
 
 @media screen and (min-device-pixel-ratio: 2) and (min-width: 1200px), screen and (min-resolution: 192dpi) and (min-width: 1200px), screen and (min-resolution: 2dppx) and (min-width: 1200px) {
@@ -708,8 +712,14 @@ nav {
 }
 
 @media screen and (min-width: 1200px) {
+  .team {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
   .team-title {
     margin-bottom: 50px;
+    font-size: 36px;
+    line-height: 1.167;
   }
   .team-list {
     margin: 0;
@@ -990,6 +1000,9 @@ nav {
 }
 
 @media screen and (min-width: 1200px) {
+  .footer {
+    text-align: left;
+  }
   .footer-left-side {
     width: 231px;
     margin-right: 70px;
@@ -1006,7 +1019,6 @@ nav {
   }
   .footer-right-side {
     margin-left: 0;
-    text-align: left;
   }
   .footer-form {
     display: flex;
